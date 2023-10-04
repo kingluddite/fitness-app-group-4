@@ -1,7 +1,7 @@
 import '../pastWorkoutContainer/pastcontain.css';
 import { useState, useEffect } from 'react';
 
-const savedWorkouts = JSON.parse(localStorage.getItem('savedWorkouts'));
+const savedWorkouts = JSON.parse(localStorage.getItem('savedWorkouts')) || [];
 const tryy = JSON.stringify(savedWorkouts[1]);
 // const getData = localStorage.getItem('savedWorkouts');
 
